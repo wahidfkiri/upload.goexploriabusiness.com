@@ -57,21 +57,21 @@ return [
         ],
 
          'cdn' => [
-        'driver' => 'local',
-        'root' => storage_path('app/cdn'),
-        'url' => env('CDN_URL') . '/storage',
-        'visibility' => 'public',
-        'permissions' => [
-            'file' => [
-                'public' => 0664,
-                'private' => 0600,
-            ],
-            'dir' => [
-                'public' => 0775,
-                'private' => 0700,
-            ],
+    'driver' => 'local',
+    'root' => public_path('cdn'), // Au lieu de storage_path('app/cdn')
+    'url' => env('CDN_URL') . '/cdn',
+    'visibility' => 'public',
+    'permissions' => [
+        'file' => [
+            'public' => 0664,
+            'private' => 0600,
+        ],
+        'dir' => [
+            'public' => 0775,
+            'private' => 0700,
         ],
     ],
+],
 
     ],
 
