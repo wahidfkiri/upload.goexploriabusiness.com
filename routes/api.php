@@ -3,7 +3,7 @@
 use App\Http\Controllers\CDNController;
 use Illuminate\Support\Facades\Route;
 
-Route::middleware(['api.auth'])->group(function () {
+Route::middleware(['cdn.auth'])->group(function () {
     Route::post('/upload', [CDNController::class, 'upload']);
     Route::post('/upload-multiple', [CDNController::class, 'uploadMultiple']);
     Route::delete('/file/{path}', [CDNController::class, 'deleteFile'])->where('path', '.*');
