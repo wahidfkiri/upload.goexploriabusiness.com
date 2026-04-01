@@ -56,10 +56,10 @@ return [
             'throw' => false,
         ],
 
-         'cdn' => [
+        'cdn' => [
     'driver' => 'local',
-    'root' => public_path('cdn'), // Au lieu de storage_path('app/cdn')
-    'url' => env('CDN_URL') . '/cdn',
+    'root' => storage_path('app/public/cdn'),
+    'url' => env('CDN_URL') . '/storage',
     'visibility' => 'public',
     'permissions' => [
         'file' => [
