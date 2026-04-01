@@ -71,6 +71,7 @@ return [
             'private' => 0700,
         ],
     ],
+    'throw' => true, // Pour avoir des erreurs explicites
 ],
 
     ],
