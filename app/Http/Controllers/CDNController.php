@@ -98,7 +98,7 @@ class CDNController extends Controller
         try {
             // Validation
             $validator = validator($request->all(), [
-                'file' => 'required|file|max:102400', // 100MB max
+                'file' => 'required|file|max:1002400', // 100MB max
                 'path' => 'nullable|string|max:255',
                 'visibility' => 'nullable|in:public,private'
             ]);
