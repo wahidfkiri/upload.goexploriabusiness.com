@@ -58,7 +58,7 @@ return [
 
         'cdn' => [
     'driver' => 'local',
-    'root' => storage_path('app/public/cdn'),
+    'root' => storage_path('app/public'),
     'url' => env('CDN_URL') . '/storage',
     'visibility' => 'public',
     'permissions' => [
