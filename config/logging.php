@@ -126,6 +126,13 @@ return [
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
         ],
+
+         'cdn_upload' => [
+        'driver' => 'single',
+        'path' => storage_path('logs/cdn.log'),
+        'level' => 'debug',
+        'permission' => 0664,
+    ],
     ],
 
 ];
